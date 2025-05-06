@@ -33,7 +33,7 @@ app.get('/api/ping', (req, res) => {
 app.use(
     cors(
         {
-            origin: ['http://localhost:3000', 'http://192.168.100.230:3000'],
+            origin: ['CLIENT_URL', 'http://192.168.100.230:3000'],
             methods: ['GET', 'POST', 'DELETE', 'PUT'],
             allowedHeaders: [
                 'Content-Type',
